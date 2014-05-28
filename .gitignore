@@ -6,6 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
+/tmp.bundle
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -14,3 +15,22 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+Rakefile
+
+config/database.yml
+config/initializers/airbrake.rb
+
+public/attachments
+tmp/*
+
+cleangit
+*~
+.DS_Store
+.project
+.ruby-version
+.rbenv-version
+*.orig
+*.sqlite3
+Vagrantfile
+.vagrant/
