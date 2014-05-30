@@ -1,3 +1,55 @@
-<h1>Welcome#index</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Rails</title>
+    <%= stylesheet_link_tag "application", media: "all",
+                                           "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <%= link_to "sample app", '#', id: "logo" %>
+        <nav>
+          <ul class="nav pull-right">
+            <li><%= link_to "Home",    '#' %></li>
+            <li><%= link_to "Help",    '#' %></li>
+            <li><%= link_to "Sign in", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+</header>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<div class="center hero-unit">
+  <h1>Welcome to the Sample App</h1>
+
+<h2>
+  This is the home page for the
+  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+  sample application.
+</h2>
+
+<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+
+
+<br /><br />
 <p>Find me in app/views/welcome/index.html.erb</p>
 <%= link_to 'My Blog', controller: 'articles' %>
+</div>
+
+<!--<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %> -->
+
+</body>
+
+</html>
