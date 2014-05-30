@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 # For Heroku and Rails 4
 gem 'rails_12factor', group: :production
 ruby '2.1.2'
+
+# For Twitter-bootstrap (also use sass-rails), https://github.com/twbs/bootstrap-sass
+gem 'bootstrap-sass', '~> 3.1.1'
