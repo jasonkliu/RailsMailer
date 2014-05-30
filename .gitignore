@@ -16,8 +16,6 @@
 /log/*.log
 /tmp
 
-Rakefile
-
 config/database.yml
 config/initializers/airbrake.rb
 
