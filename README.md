@@ -1,5 +1,5 @@
-LearningRails
-=============
+RailsMailer
+===========
 
 * Ruby version
 Rails 4.1.1
