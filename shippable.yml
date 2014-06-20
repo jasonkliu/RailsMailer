@@ -1,0 +1,27 @@
+# Documentation: http://docs.shippable.com/en/latest/languages/ruby.html
+
+# Build Environment
+build_environment: ubuntu1204
+
+# Language 
+language: ruby
+
+# Version Numbers
+rvm:
+ - 2.1.2
+
+# Environment Variables
+env:
+ - DB=postgresql
+
+# Run before the script
+# - psql -c 'create database AppRails' -U postgres
+before_script:
+ - cp config/database.yml.example.pg config/database.yml
+ - bundle exec rake db:create db:migrate
+
+# Jobs to test on the script
+script:
+ - RAILS_ENV=test bundle exec rake db:migrate --trace
+ - bundle exec rake
+
