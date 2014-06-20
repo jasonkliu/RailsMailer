@@ -25,3 +25,10 @@ script:
  - RAILS_ENV=test bundle exec rake db:migrate --trace
  - bundle exec rake
 
+# Notifications
+notifications:
+    email: false
+
+# Run after the script
+after_success:
+ - git push git@heroku.com:escarpment.git master

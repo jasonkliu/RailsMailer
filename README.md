@@ -22,5 +22,7 @@ rake db:create db:migrate
 
 * ...
 
+Application currently at http://escarpment.herokuapp.com/
+
 
 Try running this to precompile before pushing to Heroku `bundle exec rake assets:precompile`
