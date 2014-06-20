@@ -1,5 +1,4 @@
-RailsMailer
-===========
+# RailsMailer [![Build Status](https://api.shippable.com/projects/53a4a17b78202e6d011ebdad/badge/master)](https://www.shippable.com/projects/53a4a17b78202e6d011ebdad)
 
 * Ruby version
 Rails 4.1.1
