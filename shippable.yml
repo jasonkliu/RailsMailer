@@ -30,5 +30,5 @@ notifications:
     email: false
 
 # Run after the script
-after_success:
- - git push git@heroku.com:escarpment.git master
+#after_success:
+#- git push git@heroku.com:escarpment.git master
