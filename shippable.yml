@@ -31,4 +31,5 @@ notifications:
 
 # Run after the script
 after_success:
+ - git checkout master
  - git push git@heroku.com:escarpment.git master
